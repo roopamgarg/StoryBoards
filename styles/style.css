@@ -175,4 +175,15 @@ body {
   height: 2rem;
   margin: 1rem;
 }
+
+.quote {
+  padding: 4rem 10% 0rem 10%;
+  text-align: center;
+  font-family: now_regular;
+  font-size: 1.8rem;
+}
+
+.quote__author {
+  text-align: right;
+}
 /*# sourceMappingURL=style.css.map */

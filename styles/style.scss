@@ -129,3 +129,14 @@ body{
     }
 
 }
+
+.quote{
+  padding: 4rem 10% 0rem 10%;
+  text-align: center;
+  font-family: now_regular;
+  font-size: 1.8rem;
+
+  &__author{
+    text-align: right;
+  }
+}
