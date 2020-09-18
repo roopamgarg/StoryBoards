@@ -1,0 +1,131 @@
+@font-face {
+  font-family: now_bold;
+  src: url("../assets/fonts/now/Now-Bold.otf");
+}
+@font-face {
+  font-family: now_light;
+  src: url("../assets/fonts/now/Now-Light.otf");
+}
+@font-face {
+  font-family: now_medium;
+  src: url("../assets/fonts/now/Now-Medium.otf");
+}
+@font-face {
+  font-family: now_regular;
+  src: url("../assets/fonts/now/Now-Regular.otf");
+}
+@font-face {
+  font-family: now_thin;
+  src: url("../assets/fonts/now/Now-Thin.otf");
+}
+
+.header {
+ // min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 0 10% ;
+  font-family: now_regular;
+  @media (max-width:720px) {
+    flex-direction: column;    
+  padding: 10rem 10% 10% 10%;
+
+    //flex-flow: column-reverse; 
+}
+  &__right{
+      img{
+          height: 110vh;
+          filter: drop-shadow(0 2px 1rem rgba(#000,0.2));
+          @media (max-width:720px) {
+            height: 20rem;
+            position: absolute;
+            top:0;
+            z-index: -1;
+        }
+        }
+  }
+  &__btn{
+      margin-top: 1rem;
+      background-color: #545454;
+      color: #fff;
+      padding: 1rem 2.5rem;
+      font-size: 1.4rem;
+      border-radius: 0.5rem;
+      font-family: now_regular;
+      outline: none;
+      border:none;
+        box-shadow: 0 0.2rem 2rem rgba(0,0,0,0.2);
+    }
+}
+body{
+    background-color: #FEFEFE;
+    margin: 0;
+    padding: 0;
+}
+
+.logo{
+  font-family: now_bold;
+  line-height: 4rem;
+  letter-spacing: -0.2rem;
+  filter: drop-shadow(0 1px 9px rgba(0,0,0,0.2));
+ 
+    &__dark{
+        color: #000;
+        font-size: 4rem;
+    }
+    &__light{
+        font-size: 5.4rem;
+        color: #545454;
+    }
+    &__tagline{
+        letter-spacing: normal;
+        line-height: 2.5rem;
+        font-family: now_regular;
+        margin:0;
+        font-size: 1.4rem;
+    }
+}
+
+.about{
+   min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 0 10% ;
+  font-family: now_regular;
+  @media (max-width:720px) {
+    flex-direction: column;     
+
+}
+    &__img img{
+        height: 30rem;
+        filter: drop-shadow(0 1px 1rem rgba(#000,0.2));
+        @media (max-width:720px) {
+            height: 20rem;
+
+        }
+
+    }
+    &__content{
+        padding: 0 10%;
+        @media (max-width:720px) {
+         margin: 4rem 0;
+        }
+    }
+}
+
+.footer{
+    height: 10rem;
+    padding: 0 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @media (max-width:720px) {
+        flex-direction: column;
+       }
+    &__social-links{
+        img{
+            height: 2rem;
+            margin: 1rem;
+        }
+    }
+
+}
