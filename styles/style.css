@@ -58,6 +58,7 @@
     height: 20rem;
     position: absolute;
     top: 0;
+    right: 0;
     z-index: -1;
   }
 }
@@ -186,7 +187,14 @@ body {
   font-size: 1.8rem;
 }
 
+@media (max-width: 720px) {
+  .quote {
+    padding: 0rem 10% 0rem 10%;
+  }
+}
+
 .quote__author {
   text-align: right;
+  font-size: 1.2rem;
 }
 /*# sourceMappingURL=style.css.map */
